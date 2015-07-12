@@ -51,18 +51,6 @@ settings:
   settings:
     fontStyle: ''
 
-- name: Ruby's @variable
-  scope: variable.other.readwrite.instance
-  settings:
-    fontStyle: ''
-    foreground: '#ffb86c'
-
-- name: String interpolation
-  scope: constant.character.escaped, constant.character.escape, string source, string source.ruby
-  settings:
-    fontStyle: ''
-    foreground: '#ff79c6'
-
 - name: Keyword
   scope: keyword
   settings:
@@ -157,6 +145,11 @@ settings:
   settings:
     foreground: '#cfcfc2'
 
+- name: YAML String
+  scope: string.unquoted.yaml
+  settings:
+    foreground: '#f8f8f2'
+
 - name: diff.header
   scope: meta.diff, meta.diff.header
   settings:
@@ -188,6 +181,16 @@ settings:
 - scope: message.error
   settings:
     foreground: '#f83333'
+
+################################################################################
+## not defined in Monokai
+################################################################################
+
+- name: String interpolation
+  scope: constant.character.escaped, constant.character.escape, string source
+  settings:
+    fontStyle: ''
+    foreground: '#ff79c6'
 
 - name: JSON Punctuation
   scope: punctuation.definition.string.begin.json - meta.structure.dictionary.value.json,

@@ -111,32 +111,6 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Ruby's @variable</string>
-			<key>scope</key>
-			<string>variable.other.readwrite.instance</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string></string>
-				<key>foreground</key>
-				<string>#ffb86c</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>String interpolation</string>
-			<key>scope</key>
-			<string>constant.character.escaped, constant.character.escape, string source, string source.ruby</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string></string>
-				<key>foreground</key>
-				<string>#ff79c6</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>Keyword</string>
 			<key>scope</key>
 			<string>keyword</string>
@@ -341,6 +315,17 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>YAML String</string>
+			<key>scope</key>
+			<string>string.unquoted.yaml</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#f8f8f2</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>diff.header</string>
 			<key>scope</key>
 			<string>meta.diff, meta.diff.header</string>
@@ -408,6 +393,19 @@
 			<dict>
 				<key>foreground</key>
 				<string>#f83333</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>String interpolation</string>
+			<key>scope</key>
+			<string>constant.character.escaped, constant.character.escape, string source</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#ff79c6</string>
 			</dict>
 		</dict>
 		<dict>
