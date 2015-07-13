@@ -12,7 +12,7 @@
 				<key>activeGuide</key>
 				<string>#9d550fb0</string>
 				<key>background</key>
-				<string>#282a36</string>
+				<string>#202122</string>
 				<key>bracketContentsForeground</key>
 				<string>#f8f8f2a5</string>
 				<key>bracketContentsOptions</key>
@@ -28,13 +28,13 @@
 				<key>findHighlightForeground</key>
 				<string>#000000</string>
 				<key>foreground</key>
-				<string>#f8f8f2</string>
+				<string>#f8f8f0</string>
 				<key>invisibles</key>
 				<string>#3b3a32</string>
 				<key>lineHighlight</key>
-				<string>#44475a</string>
+				<string>#33353a</string>
 				<key>selection</key>
-				<string>#44475a</string>
+				<string>#383a40</string>
 				<key>selectionBorder</key>
 				<string>#222218</string>
 				<key>tagsOptions</key>
@@ -154,7 +154,7 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>underline</string>
+				<string>italic</string>
 				<key>foreground</key>
 				<string>#50fa7b</string>
 			</dict>
@@ -180,7 +180,7 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string></string>
+				<string>italic</string>
 				<key>foreground</key>
 				<string>#50fa7b</string>
 			</dict>
@@ -247,7 +247,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#6be5fd</string>
+				<string>#8be9fd</string>
 			</dict>
 		</dict>
 		<dict>
@@ -260,7 +260,7 @@
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string>#66d9ef</string>
+				<string>#8be9fd</string>
 			</dict>
 		</dict>
 		<dict>
@@ -310,7 +310,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#cfcfc2</string>
+				<string>#8be9fd</string>
 			</dict>
 		</dict>
 		<dict>
@@ -321,7 +321,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#f8f8f2</string>
+				<string>#f8f8f0</string>
 			</dict>
 		</dict>
 		<dict>
@@ -365,7 +365,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#e6db74</string>
+				<string>#f1fa8c</string>
 			</dict>
 		</dict>
 		<dict>
@@ -383,7 +383,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#e6db74</string>
+				<string>#f1fa8c</string>
 			</dict>
 		</dict>
 		<dict>
@@ -392,42 +392,75 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#f83333</string>
+				<string>#ff5555</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>String interpolation</string>
+			<string>Flow</string>
 			<key>scope</key>
-			<string>constant.character.escaped, constant.character.escape, string source</string>
+			<string>meta.flowtype</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#282c33</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Flow</string>
+			<key>scope</key>
+			<string>punctuation.separator.flowtype, punctuation.section.flowtype</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string></string>
+				<string>bold</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>String contents</string>
+			<key>scope</key>
+			<string>constant.character.escape</string>
+			<key>settings</key>
+			<dict>
 				<key>foreground</key>
 				<string>#ff79c6</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>JSON Punctuation</string>
+			<string>Function call</string>
 			<key>scope</key>
-			<string>punctuation.definition.string.begin.json - meta.structure.dictionary.value.json, punctuation.definition.string.end.json - meta.structure.dictionary.value.json</string>
+			<string>meta.function-call variable.function</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#eeeeee</string>
+				<string>#50fa7b</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>JSON Structure</string>
+			<string>(like) Library class/type</string>
 			<key>scope</key>
-			<string>meta.structure.dictionary.json string.quoted.double.json</string>
+			<string>variable.language</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#8be9fd</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>JSON Punctuation</string>
+			<key>scope</key>
+			<string>punctuation.definition.string.begin.json, punctuation.definition.string.end.json</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#8be9fd</string>
+				<string>#f8f8f0</string>
 			</dict>
 		</dict>
 		<dict>
@@ -441,74 +474,6 @@
 				<string>#f1fa8c</string>
 			</dict>
 		</dict>
-		<dict>
-			<key>name</key>
-			<string>JSON: 6 deep</string>
-			<key>scope</key>
-			<string>meta meta meta meta meta meta meta.structure.dictionary.value string</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#50fa7b</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>JSON: 5 deep</string>
-			<key>scope</key>
-			<string>meta meta meta meta meta meta.structure.dictionary.value string</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#ffb86c</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>JSON: 4 deep</string>
-			<key>scope</key>
-			<string>meta meta meta meta meta.structure.dictionary.value string</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#ff79c6</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>JSON: 3 deep</string>
-			<key>scope</key>
-			<string>meta meta meta meta.structure.dictionary.value string</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#bd93f9</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>JSON: 2 deep</string>
-			<key>scope</key>
-			<string>meta meta meta.structure.dictionary.value string</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#50fa7b</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>JSON: 1 deep</string>
-			<key>scope</key>
-			<string>meta meta.structure.dictionary.value string</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#ffb86c</string>
-			</dict>
-		</dict>
 	</array>
-	<key>uuid</key>
-	<string>83091B89-765E-4F0D-9275-0EC6CB084126</string>
 </dict>
 </plist>

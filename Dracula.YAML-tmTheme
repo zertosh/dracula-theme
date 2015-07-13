@@ -1,11 +1,10 @@
 # [PackageDev] target_format: plist, ext: tmTheme
 name: Dracula
-uuid: 83091B89-765E-4F0D-9275-0EC6CB084126
 
 settings:
 - settings:
     activeGuide: '#9d550fb0'
-    background: '#282a36'
+    background: '#202122'
     bracketContentsForeground: '#f8f8f2a5'
     bracketContentsOptions: underline
     bracketsForeground: '#f8f8f2a5'
@@ -13,10 +12,10 @@ settings:
     caret: '#f8f8f0'
     findHighlight: '#effb7b'
     findHighlightForeground: '#000000'
-    foreground: '#f8f8f2'
+    foreground: '#f8f8f0'
     invisibles: '#3b3a32'
-    lineHighlight: '#44475a'
-    selection: '#44475a'
+    lineHighlight: '#33353a'
+    selection: '#383a40'
     selectionBorder: '#222218'
     tagsOptions: stippled_underline
 
@@ -71,7 +70,7 @@ settings:
 - name: Class name
   scope: entity.name.class
   settings:
-    fontStyle: underline
+    fontStyle: italic
     foreground: '#50fa7b'
 
 - name: Inherited class
@@ -83,7 +82,7 @@ settings:
 - name: Function name
   scope: entity.name.function
   settings:
-    fontStyle: ''
+    fontStyle: italic
     foreground: '#50fa7b'
 
 - name: Function argument
@@ -114,13 +113,13 @@ settings:
   scope: support.constant
   settings:
     fontStyle: ''
-    foreground: '#6be5fd'
+    foreground: '#8be9fd'
 
 - name: Library class/type
   scope: support.type, support.class
   settings:
     fontStyle: italic
-    foreground: '#66d9ef'
+    foreground: '#8be9fd'
 
 - name: Library variable
   scope: support.other.variable
@@ -143,12 +142,12 @@ settings:
 - name: JSON String
   scope: meta.structure.dictionary.json string.quoted.double.json
   settings:
-    foreground: '#cfcfc2'
+    foreground: '#8be9fd'
 
 - name: YAML String
   scope: string.unquoted.yaml
   settings:
-    foreground: '#f8f8f2'
+    foreground: '#f8f8f0'
 
 - name: diff.header
   scope: meta.diff, meta.diff.header
@@ -168,7 +167,7 @@ settings:
 - name: diff.changed
   scope: markup.changed
   settings:
-    foreground: '#e6db74'
+    foreground: '#f1fa8c'
 
 - scope: constant.numeric.line-number.find-in-files - match
   settings:
@@ -176,64 +175,48 @@ settings:
 
 - scope: entity.name.filename
   settings:
-    foreground: '#e6db74'
+    foreground: '#f1fa8c'
 
 - scope: message.error
   settings:
-    foreground: '#f83333'
+    foreground: '#ff5555'
 
 ################################################################################
 ## not defined in Monokai
 ################################################################################
 
-- name: String interpolation
-  scope: constant.character.escaped, constant.character.escape, string source
+- name: Flow
+  scope: meta.flowtype
   settings:
-    fontStyle: ''
+    background: '#282c33'
+
+- name: Flow
+  scope: punctuation.separator.flowtype, punctuation.section.flowtype
+  settings:
+    fontStyle: bold
+
+- name: String contents
+  scope: constant.character.escape
+  settings:
     foreground: '#ff79c6'
 
-- name: JSON Punctuation
-  scope: punctuation.definition.string.begin.json - meta.structure.dictionary.value.json,
-    punctuation.definition.string.end.json - meta.structure.dictionary.value.json
+- name: Function call
+  scope: meta.function-call variable.function
   settings:
-    foreground: '#eeeeee'
+    foreground: '#50fa7b'
 
-- name: JSON Structure
-  scope: meta.structure.dictionary.json string.quoted.double.json
+- name: (like) Library class/type
+  scope: variable.language
   settings:
+    fontStyle: italic
     foreground: '#8be9fd'
+
+- name: JSON Punctuation
+  scope: punctuation.definition.string.begin.json, punctuation.definition.string.end.json
+  settings:
+    foreground: '#f8f8f0'
 
 - name: JSON String
   scope: meta.structure.dictionary.value.json string.quoted.double.json
   settings:
     foreground: '#f1fa8c'
-
-- name: 'JSON: 6 deep'
-  scope: meta meta meta meta meta meta meta.structure.dictionary.value string
-  settings:
-    foreground: '#50fa7b'
-
-- name: 'JSON: 5 deep'
-  scope: meta meta meta meta meta meta.structure.dictionary.value string
-  settings:
-    foreground: '#ffb86c'
-
-- name: 'JSON: 4 deep'
-  scope: meta meta meta meta meta.structure.dictionary.value string
-  settings:
-    foreground: '#ff79c6'
-
-- name: 'JSON: 3 deep'
-  scope: meta meta meta meta.structure.dictionary.value string
-  settings:
-    foreground: '#bd93f9'
-
-- name: 'JSON: 2 deep'
-  scope: meta meta meta.structure.dictionary.value string
-  settings:
-    foreground: '#50fa7b'
-
-- name: 'JSON: 1 deep'
-  scope: meta meta.structure.dictionary.value string
-  settings:
-    foreground: '#ffb86c'
