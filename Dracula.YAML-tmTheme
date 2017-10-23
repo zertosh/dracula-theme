@@ -13,7 +13,7 @@ settings:
     findHighlight: '#effb7b'
     findHighlightForeground: '#000000'
     foreground: '#f8f8f0'
-    invisibles: '#3b3a32'
+    # invisibles: '#f8f8f259'
     lineHighlight: '#33353a'
     selection: '#383a40'
     selectionBorder: '#222218'
